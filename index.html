@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bunq Messenger</title>
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <link rel="stylesheet" href="css/general.css"/>
+        <link rel="stylesheet" href="css/home.css" />
+        <script>
+            $(document).ready(function(){
+                $("#login-button").click(function(event){
+                    event.preventDefault();
+                    localStorage.setItem("username",$("#username-field").val());
+                    window.open("html/chat.html","_self");
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+ 
+       
+        <section class="bkg-section" id="strip-11" style="background-color: #F0BA1A"></section>
+        <section class="bkg-section" id="strip-10" style="background-color: #F26925"></section>
+        <section class="bkg-section" id="strip-9" style="background-color: #EC2329"></section>
+        <section class="bkg-section" id="strip-8" style="background-color: #80171C"></section>
+        <section class="bkg-section" id="strip-7" style="background-color: #435070"></section>
+        <section class="bkg-section" id="strip-6" style="background-color: #2760AD"></section>
+        <section class="bkg-section" id="strip-5" style="background-color: #3896D3"></section>
+        <section class="bkg-section" id="strip-4" style="background-color: #26BDAE"></section>
+        <section class="bkg-section" id="strip-3" style="background-color: #96C05E"></section>
+        <section class="bkg-section" id="strip-2" style="background-color: #69BC46"></section>
+        <section class="bkg-section" id="strip-1" style="background-color: #3DA549"></section>
+        
+        <section id="main-content">
+            <h2>Welcome</h2>
+            <img src="img/logo.png">
+            <h5>brought to you by Luigi Russo</h5>
+
+            <form id="login-form">
+                <h3>Please, insert your name</h3>
+                <input id="username-field" type="text" placeholder="Choose an username" required/>
+                <br><br>
+                <input type="submit" id="login-button" value="LOGIN"/>
+            </form>
+        </section>
+        
+    </body>
+    
+</html>
